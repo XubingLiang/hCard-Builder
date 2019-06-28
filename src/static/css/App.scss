@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    word-break: break-all;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ededed;
+    font-size: 0.9rem;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    text-transform: none;
+    margin-top: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    vertical-align: middle;
+
+    &:hover {
+      background-color: #5a6268;
+      border-color: #545b62;
+    }
+}
+
+.hcard-builder-form {
+    height: 100vh;
+    .hcard-builder-header {
+        font-weight: bold;
+        margin: 32px 0;
+        color: #394f63;
+    }
+    .hcard-builder-subheader {
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        color: #b5babd;
+        font-size: 1rem;
+    }
+    .buttons {
+        margin-top: 16px;
+        width: 100%;
+    }
+}
+
+.hcard-builder-preview {
+    height: 100vh;
+    background: #e1e6ed;
+}
+
+.content {
+  margin-top: 135px;
+  padding: 0 10px;
+  max-height: 50vh;
+
+  .title {
+    color: #a0a5a8;
+    text-align: right;
+  }
+  .details {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: #1c415c;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .profile {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .avatar {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 120px;
+    position: relative;
+    top: 20px;
+  }
+
+  .address-detail {
+    padding: 0 0 15px 15px;
+    height: auto;
+  }
+
+  .detail-item {
+    border-bottom: 1px solid #eee;
+    white-space: nowrap;
+    padding: 20px 20px 0 0;
+
+
+    .label {
+      text-transform: uppercase;
+      width: 100px;
+      display: inline-block;
+      color: #1c415c;
+    }
+    .value {
+      display: inline-block;
+      font-size: 1.25rem
+    }
+
+  }
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .hcard-builder-preview {
+    max-width: 100%;
+    height: 450px;
+  }
+  .hcard-builder-form {
+    max-width: 100%
+  }
+  .content {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+}
