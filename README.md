@@ -1,6 +1,6 @@
-# React Stock API
+# hCard Builder
 Prerequisite:
-- NodeJS
+- NodeJS(latest)
 
 
 ## Set up
