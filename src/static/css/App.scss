@@ -129,13 +129,13 @@ input[type="file"] {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 995px) {
   .row {
     flex-direction: column-reverse;
   }
   .hcard-builder-preview {
     max-width: 100%;
-    height: 500px;
+    min-height: 500px;
   }
   .hcard-builder-form {
     max-width: 100%
