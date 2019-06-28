@@ -12,6 +12,7 @@ const firstAddressLine = (details) => {
 }
 
 const hCardPreview = ({details}) => {
+  const imgSrc = details.avatar ? details.avatar : 'https://cdn.onlinewebfonts.com/svg/img_173956.png'
   return(
     <div className='content'>
       <h5 className='title'>HCARD PREVIEW </h5>
@@ -19,7 +20,7 @@ const hCardPreview = ({details}) => {
         <Jumbotron fluid className='text-light details'>
           <h1 style={{ flex: 3}}>{details.givenName} {details.surname}</h1>
           <div className="avatar">
-            <img alt={`not found`} src={details.avatar} style={{width: '100%'}} />
+            <img alt={`not found`} src={imgSrc} style={{width: '100%', height: '100%'}} />
           </div>
         </Jumbotron>
         <div className='address-detail'>
