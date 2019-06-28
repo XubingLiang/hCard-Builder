@@ -23,10 +23,12 @@ $ yarn start
 
 ## Guide
 
-**Time Spent:** around 4.5 hours
-**Use UI library:** react-bootstrap
+**Time Spent:** around 4.5 hours.
+
+**Used UI library:** react-bootstrap
+
 **Used external source:** 
-- preview uploaded image: https://medium.com/@650egor/react-30-day-challenge-day-2-image-upload-preview-2d534f8eaaa
+- preview of uploaded image: https://medium.com/@650egor/react-30-day-challenge-day-2-image-upload-preview-2d534f8eaaa
 
 **Requirements:**
 * As the form is filled out, the preview should be automatically updated ✅ 
